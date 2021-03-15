@@ -78,7 +78,7 @@ const Tracker = () => {
           <ul>
             {users.map((user) => (
               <li key={user.id} className={styles.trackesListItem}>
-                <p>{user.name ? user.name : Date.now()}</p>
+                <p>{user.name ? user.name : (user.name = Date.now())}</p>
                 <span>{time}</span>
                 <div>
                   <button type="button" onClick={null}>
