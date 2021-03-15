@@ -93,18 +93,6 @@ const Tracker = () => {
                 </div>
               </li>
             ))}
-            {/* <li className={styles.trackesListItem}>
-              <p>Sasha</p>
-              <span>{time}</span>
-              <div>
-                <button type="button" onClick={null}>
-                  Start
-                </button>
-                <button type="button" onClick={null}>
-                  Stop
-                </button>
-              </div>
-            </li> */}
           </ul>
         </div>
       </div>
