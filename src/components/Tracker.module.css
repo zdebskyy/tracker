@@ -1,6 +1,8 @@
 .container{
-    width: 500px;
+    max-width: 560px;
     margin: 0 auto;
+    min-height: auto;
+    padding: 5px;
 }
 
 .title{
@@ -12,21 +14,64 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 200px;
+    justify-content: space-between;
+    height: 28px;
+    padding: 5px, 0;
+    width: 560px;
     border: 1px solid black;
-    border-radius: 10px;
-}
-.input{
-    border: none;
+    border-radius: 25px;
+    padding-left: 5px;
+    margin-bottom: 30px;
 }
 
-.trackesList{
-    text-align: center;
+.input{
+    height: 26px;
+    border: none;
+    min-width: 250px;
+    outline: none;
+    border-radius: 25px;
 }
-.trackesListItem{
-    display: flex;
-    align-items: center;
-    width: 500px;
-    justify-content: space-between;
+.submitBtn{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: none;
+    margin-right: 1px;
+    outline: none;
+    background-image: url(../icons/play_circle-24px.svg);
+    background-repeat: no-repeat;
 }
+
+@media screen and (max-width: 559px) {
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        min-height: auto;
+        padding: 5px;
+    }
+    .inputContainer{
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 28px;
+        padding: 5px, 0;
+        width: auto;
+        border: 1px solid black;
+        border-radius: 25px;
+        padding-left: 5px;
+        margin-bottom: 30px;
+    }
+    input{
+        height: 26px;
+        border: none;
+        width: auto;
+        outline: none;
+        border-radius: 25px;
+    }
+    .submitBtn{
+        display: block;
+    }
+
+}
+  
