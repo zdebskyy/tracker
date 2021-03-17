@@ -5,11 +5,11 @@
     border: none;
     margin-right: 1px;
     outline: none;
-    background-image: url(../icons/play_circle-24px.svg);
+    background-image: url(../../icons/play_circle-24px.svg);
     background-repeat: no-repeat;
     margin-right: 5px;
 }
 .pause{
     composes: startBtn;
-    background-image: url(../icons/pause_circle_outline-24px.svg);  
+    background-image: url(../../icons/pause_circle_outline-24px.svg);  
 }
