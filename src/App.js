@@ -1,5 +1,5 @@
 import React from "react";
-import Tracker from "./components/Tracker";
+import Tracker from "./components/Tracker/Tracker";
 import "./base.css";
 
 function App() {

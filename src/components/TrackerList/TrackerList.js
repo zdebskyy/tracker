@@ -1,5 +1,5 @@
 import React from "react";
-import TrackerItem from "./TrackerItem";
+import TrackerItem from "../TrackerItem/TrackerItem";
 import styles from "./TrackerList.module.css";
 
 const TrackerList = ({ users, time, userToDelete }) => {

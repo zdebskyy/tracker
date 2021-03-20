@@ -1,28 +1,26 @@
 import React, { useState, useEffect } from "react";
-import TrackerList from "./TrackerList";
-import Moment from "react-moment";
-import moment from "moment";
+import TrackerList from "../TrackerList/TrackerList";
 import styles from "./Tracker.module.css";
 import { v4 as uuidv4 } from "uuid";
 import { useDispatch, useSelector } from "react-redux";
-import userActions from "../redux/usersActions";
-import { usersSelector } from "../redux/usersSelector";
+import userActions from "../../redux/usersActions";
+import { usersSelector } from "../../redux/usersSelector";
 
 const Tracker = () => {
   const [time, setTime] = useState(0);
-  const start = moment().add(0, "s");
   const [name, setName] = useState("");
   const dispatch = useDispatch();
 
+  // useEffect(() => {
+  //   const intervalId = setInterval(setTime(time + 1), 1000);
+  //   // console.log(time);
+
+  //   return () => {
+  //     clearInterval(intervalId);
+  //   };
+  // }, [time]);
+
   const users = useSelector(usersSelector);
-
-  // useEffect(() => {
-  //   const parseUsers = localStorage.getItem("users");
-  // }, []);
-
-  // useEffect(() => {
-  //   localStorage.setItem("users", JSON.stringify(users));
-  // }, [users]);
 
   const userName = (e) => {
     setName(e.target.value);
@@ -46,8 +44,6 @@ const Tracker = () => {
   return (
     <>
       <div className={styles.container}>
-        {<Moment date={start} format="hh:mm:ss" durationFromNow />}
-
         <h2 className={styles.title}>Tracker</h2>
         <form
           className={styles.inputContainer}

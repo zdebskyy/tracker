@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import ButtonStartPause from "./ButtonStartPause/ButtonStartPause";
+import ButtonStartPause from "../ButtonStartPause/ButtonStartPause";
 import styles from "./TrackerItem.module.css";
-import userActions from "../redux/usersActions";
+import userActions from "../../redux/usersActions";
 import { useDispatch } from "react-redux";
 
 const TrackerItem = ({ user, time, userToDelete }) => {

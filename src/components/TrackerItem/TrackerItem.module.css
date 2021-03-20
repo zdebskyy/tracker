@@ -1,0 +1,70 @@
+.trackesListItem {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+  border-top: 1px solid grey;
+}
+.trackesListActiveItem {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+  border-top: 1px solid grey;
+  background-color: rgba(164, 164, 164, 0.5);
+}
+.trackesListItem:last-child {
+  border-bottom: 1px solid grey;
+}
+.trackesListActiveItem:last-child {
+  border-bottom: 1px solid grey;
+}
+.btnContainer {
+  display: flex;
+  align-items: center;
+}
+
+.timer {
+  margin-right: 40px;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+.userName {
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+.deleteBtn {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: none;
+  margin-right: 1px;
+  outline: none;
+  background-image: url(../../icons/remove_circle_outline-24px.svg);
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 559px) {
+  .trackesListItem {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    width: auto;
+    justify-content: space-between;
+    border-top: 1px solid grey;
+    margin-bottom: 4px;
+  }
+  .trackesListActiveItem {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    width: auto;
+    justify-content: space-between;
+    border-top: 1px solid grey;
+    margin-bottom: 4px;
+    background-color: greenyellow;
+  }
+}
